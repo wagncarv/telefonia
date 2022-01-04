@@ -1,5 +1,5 @@
 defmodule Chamada do
-  defstruct data: nil, duracao: nil
+  defstruct data: nil, duracao: 0.0
 
   alias Assinante
 
