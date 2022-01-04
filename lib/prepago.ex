@@ -1,5 +1,5 @@
 defmodule Prepago do
-  defstruct creditos: 10.0, recarga: []
+  defstruct creditos: 0.0, recargas: []
   @preco_minuto 1.45
 
   def fazer_chamada(numero, data, duracao) do

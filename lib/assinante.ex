@@ -66,6 +66,7 @@ defmodule Assinante do
         (nova_lista ++ [assinante])
         |> :erlang.term_to_binary()
         |> write(pegar_plano(assinante))
+
       false ->
         {:erro, "Assinante não pode alterar o plano"}
     end
