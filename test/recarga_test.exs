@@ -24,4 +24,11 @@ defmodule RecargaTest do
             assert Enum.count(assinante.plano.recargas) == 1
         end
     end
+
+    describe "%Recarga{}" do
+        test "retorna estrutura recarga" do
+            assert %Recarga{data: DateTime.utc_now(), valor: 10}.valor == 10
+        end
+
+    end
 end
